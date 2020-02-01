@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backroundColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <ImageView
+            android:id="@+id/item_icon_imageview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.15"
+            android:src="@drawable/ic_swimming_silhouette"/>
+
+        <TextView
+            android:id="@+id/exercise_textview1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:textColor="@color/textColor"
+            android:text="Running"/>
+
+        <TextView
+            android:id="@+id/time_textview1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/textColor"
+            android:text="30 min"/>
+
+
+        <RadioButton
+            android:id="@+id/exercise_radioButton1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:layout_gravity="center"
+            android:checked="true"
+            android:buttonTint="@color/textColor"/>
+    </LinearLayout>
+
+</RelativeLayout>

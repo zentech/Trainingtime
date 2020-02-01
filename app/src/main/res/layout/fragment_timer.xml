@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backroundColor">
+    <TextView
+        android:id="@+id/title_activity_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/title_activity"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="28sp" />
+
+    <!--timer goes here-->
+    <RelativeLayout
+        android:id="@+id/layout_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_activity_textview"
+        android:padding="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp">
+
+        <ProgressBar
+            android:id="@+id/timer_progressBar"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:progressDrawable="@drawable/progressbar_states"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:id="@+id/timer_main_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/textColor"
+            android:text="00:00"
+            android:textSize="70sp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <!-- stats goes here -->
+    <LinearLayout
+        android:id="@+id/layout_stats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layout_progressbar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:src="@drawable/ic_whatshot_black_24dp"/>
+
+            <TextView
+                android:id="@+id/calories_textview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.70"
+                android:textSize="18sp"
+                android:textColor="@color/textColor"
+                android:text="500 cal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:src="@drawable/ic_timer_black_24dp"/>
+
+            <TextView
+                android:id="@+id/workout_time_textview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.70"
+                android:textSize="18sp"
+                android:textColor="@color/textColor"
+                android:text="1:30 min"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:src="@drawable/ic_favorite_black_24dp"/>
+
+            <TextView
+                android:id="@+id/heartbit_textview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.70"
+                android:textSize="18sp"
+                android:textColor="@color/textColor"
+                android:text="125 b/s"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- work out list que -->
+    <ListView
+        android:id="@+id/workout_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_stats"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="15dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/reset_button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="invisible"
+        android:backgroundTint="@color/colorAccent"
+        android:src="@drawable/ic_stop_black_24dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/timer_button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/colorAccent"
+        android:src="@drawable/ic_play_arrow_black_24dp" />
+
+</RelativeLayout>

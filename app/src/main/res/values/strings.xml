@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Activity Time</string>
+    <string name="title_timer">Timer</string>
+    <string name="title_workout">Workout</string>
+    <string name="title_stats">Stats</string>
+    <string name="title_activity">Activity Time</string>
+
+    <string-array name="exercise_list">
+        <item>Pushup</item>
+        <item>Pullup</item>
+        <item>Squat</item>
+        <item>Running</item>
+        <item>Cycling</item>
+        <item>Yoga</item>
+        <item>Walking</item>
+        <item>Weights</item>
+        <item>Rowing</item>
+        <item>Dips</item>
+        <item>Lunges</item>
+        <item>Planks</item>
+    </string-array>
+
+    <string-array name="exercise_images">
+        <item>R.drawable.ic_pushups_exercise</item>
+        <item>R.drawable.ic_pullups_exercise</item>
+        <item>R.drawable.ic_squat_exercise</item>
+        <item>R.drawable.ic_running_exercise</item>
+        <item>R.drawable.ic_bike_exercise</item>
+        <item>R.drawable.ic_yoga_exercise</item>
+        <item>R.drawable.ic_walking_exercise</item>
+        <item>R.drawable.ic_weightlifting_exercise</item>
+        <item>R.drawable.ic_rowing_exercise</item>
+        <item>R.drawable.ic_dips_exercise</item>
+        <item>R.drawable.ic_lunges_exercise</item>
+        <item>R.drawable.ic_pushups_exercise</item>
+    </string-array>
+
+    <string-array name="exercise_times">
+        <item>15</item>
+        <item>20</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>30</item>
+        <item>30</item>
+        <item>60</item>
+        <item>20</item>
+        <item>10</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="exercise_description">
+        <item>15</item>
+        <item>20</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>30</item>
+        <item>30</item>
+        <item>60</item>
+        <item>20</item>
+        <item>10</item>
+        <item>10</item>
+    </string-array>
+</resources>
